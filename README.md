@@ -6,10 +6,10 @@ Overview
 
 This dataset can be used to train chatbots on Large Language Models such as GPT, Llama2 and Falcon.
 
-The dataset is parallel to our Evaluation dataset (see [Customer Service Tagged Evaluation Dataset for Intent Detection](https://github.com/bitext/customer-support-intent-detection-evaluation-dataset)). Both datasets can be used in conjunction to first train then evaluate the accuracy provided by training. The main difference between the two datasets is the number of utterances:
+The dataset is parallel to our Evaluation dataset (see [Customer Service Tagged Evaluation Dataset for Intent Detection](https://github.com/bitext/customer-support-intent-detection-evaluation-dataset)). Both datasets can be used in conjunction to first train and then evaluate the accuracy provided by training. The main difference between the two datasets is the number of utterances:
 
-  - The training dataset contains 8,100 utterances (300 per intent), because most platforms limit the number of utterances that can be used for training 
-  - The evaluation dataset contains around 270,000 utterances (around 10,000 per intent), since there is no limit in the amount of evaluation data that can be used in any platform
+  - The training dataset contains 4,514 utterances (around 160 per intent) because most platforms limit the number of utterances that can be used for training 
+  - The evaluation dataset contains around 270,000 utterances (around 10,000 per intent) since there is no limit to the amount of evaluation data that can be used in any platform
 
 Both datasets share the rest of the specifications, so they can be used in conjunction. The training dataset has the following specs, shared with the evaluation dataset:
 
@@ -34,12 +34,12 @@ Utterances and Linguistic Tags
 ------------------------------------
 The dataset contains 8,100 training utterances, with 300 utterances per intent. It has been split into training (80%), validation (10%) and testing (10%) sets, preserving the distribution of intents and linguistic phenomena.
 
-The dataset also reflects commonly occurring linguistic phenomena of real-life chatbots, such as: spelling mistakes, run-on words, punctuation errors…
+The dataset also reflects commonly occurring linguistic phenomena of real-life chatbots, such as spelling mistakes, run-on words, punctuation errors…
 
 Each entry in the dataset contains the following four fields:
 
   - context: the domain to which the entry applies
-  - role: the role (virtual assistant, user...) which the model should adopt
+  - role: the role (virtual assistant, user...) that the model should adopt
   - instruction: a user request from the Customer Service domain
   - intent: the intent corresponding to the user instruction
   - entity_type: the type of entity contained in the utterance
