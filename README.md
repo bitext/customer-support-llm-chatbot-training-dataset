@@ -8,8 +8,8 @@ This dataset can be used to train chatbots on Large Language Models such as GPT,
 
 The dataset is parallel to our Evaluation dataset (see [Customer Service Tagged Evaluation Dataset for Intent Detection](https://github.com/bitext/customer-support-intent-detection-evaluation-dataset)). Both datasets can be used in conjunction to first train and then evaluate the accuracy provided by training. The main difference between the two datasets is the number of utterances:
 
-  - The training dataset contains 4,514 utterances (around 160 per intent) because most platforms limit the number of utterances that can be used for training 
-  - The evaluation dataset contains around 270,000 utterances (around 10,000 per intent) since there is no limit to the amount of evaluation data that can be used in any platform
+  - The training dataset contains 4,514 utterances (around 160 per intent) 
+  - The evaluation dataset contains around 270,000 utterances (around 10,000 per intent)
 
 Both datasets share the rest of the specifications, so they can be used in conjunction. The training dataset has the following specs, shared with the evaluation dataset:
 
