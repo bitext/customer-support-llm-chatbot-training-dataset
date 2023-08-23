@@ -24,7 +24,7 @@ Each utterance is tagged with entities/slots when applicable. Additionally, each
   - The tag “INTERROGATIVE” indicates that the utterance is a question: “how do I open an account”
   - The tag “OFFENSIVE” indicates that the utterance contains offensive expressions: “open my f****** account”
 
-There are a total of 11 tags. See below for a full list of tags, categories and intents.
+There are a total of 12 tags. See below for a full list of tags, categories and intents.
 
 The purpose of these tags is to customize the dataset so the trained bot can easily adapt to different user language profiles. A bot that sells sneakers and targets a younger population should be proficient in colloquial language; while a classical retail banking bot should be able to handle more formal or polite language.
 
@@ -63,6 +63,7 @@ Each utterance is enriched with one or more of these tags:
     - B - Basic syntactic structure
     - C - Coordinated syntactic structure
     - I - Interrogative structure
+    - N - negation (don't, can't…)
     - M - Morphological variation (plurals, tenses…)
     - L - Lexical variation (synonyms)
     - E - Expanded abbreviations (I'm -> I am, I'd -> I would…)
