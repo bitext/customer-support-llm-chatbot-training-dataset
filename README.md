@@ -32,7 +32,7 @@ These intents have been selected from Bitext's collection of 20 domain-specific 
 
 Utterances and Linguistic Tags
 ------------------------------------
-The dataset contains 8,100 training utterances, with 300 utterances per intent. It has been split into training (80%), validation (10%) and testing (10%) sets, preserving the distribution of intents and linguistic phenomena.
+The dataset contains 4,540 training utterances, with 300 utterances per intent. It has been split into training (80%), validation (10%) and testing (10%) sets, preserving the distribution of intents and linguistic phenomena.
 
 The dataset also reflects commonly occurring linguistic phenomena of real-life chatbots, such as spelling mistakes, run-on words, punctuation errors…
 
