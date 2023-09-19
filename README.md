@@ -8,15 +8,15 @@ This dataset can be used to train chatbots on Large Language Models such as GPT,
 
 The dataset is parallel to our Evaluation dataset (see [Customer Service Tagged Evaluation Dataset for Intent Detection](https://github.com/bitext/customer-support-intent-detection-evaluation-dataset)). Both datasets can be used in conjunction to first train and then evaluate the accuracy provided by training. The main difference between the two datasets is the number of utterances:
 
-  - The training dataset contains 4,514 utterances (around 160 per intent) 
+  - The training dataset contains 4,269 utterances (around 200 per intent) 
   - The evaluation dataset contains around 270,000 utterances (around 10,000 per intent)
 
 Both datasets share the rest of the specifications, so they can be used in conjunction. The training dataset has the following specs, shared with the evaluation dataset:
 
   - Customer Service domain 
-  - 11 categories or intent groups
-  - 27 intents assigned to one of the 11 categories
-  - 7 entity/slot types
+  - 10 categories or intent groups
+  - 20 intents assigned to one of the 10 categories
+  - 6 entity/slot types
 
 Each utterance is tagged with entities/slots when applicable. Additionally, each utterance is enriched with tags that indicate the type of language variation that the utterance expresses. Examples include:
 
@@ -32,7 +32,7 @@ These intents have been selected from Bitext's collection of 20 domain-specific 
 
 Utterances and Linguistic Tags
 ------------------------------------
-The dataset contains 4,540 training utterances, with 300 utterances per intent. It has been split into training (80%), validation (10%) and testing (10%) sets, preserving the distribution of intents and linguistic phenomena.
+The dataset contains 4,269 training utterances, with 200 utterances per intent. It has been split into training (80%), validation (10%) and testing (10%) sets, preserving the distribution of intents and linguistic phenomena.
 
 The dataset also reflects commonly occurring linguistic phenomena of real-life chatbots, such as spelling mistakes, run-on words, punctuation errors…
 
@@ -48,6 +48,7 @@ Each entry in the dataset contains the following four fields:
   - end_offset: the ending position of the entity
   - category: the high-level semantic category for the intent
   - tags: different tags that reflect the types of language variations expressed in the utterance
+  - response_type: identifier for tracking the composition, and version of chatbot responses.
   - response: an example expected response from the chatbot
 
 The dataset contains tags that reflect different language phenomena like colloquial or offensive language. So if an utterance for intent “cancel_order” contains the “COLLOQUIAL” tag, the utterance will express an informal language variation like: “can u cancel my order”
@@ -110,4 +111,4 @@ The entities covered by the dataset are:
   - refund_amount
     - Intents: get_refund, track_refund
 
-(c) Bitext Innovations, 2022
+(c) Bitext Innovations, 2023
