@@ -39,16 +39,17 @@ Each entry in the dataset contains the following fields:
 
 The categories and intents covered by the dataset are:
 
-- ACCOUNT: create_account, delete_account, edit_account, switch_account
+- ACCOUNT: create_account, delete_account, edit_account, recover_password, registration_problems, switch_account
 - CANCELLATION_FEE: check_cancellation_fee
-- DELIVERY: delivery_options
+- CONTACT: contact_customer_service, contact_human_agent
+- DELIVERY: delivery_options, delivery_period
 - FEEDBACK: complaint, review
 - INVOICE: check_invoice, get_invoice
-- NEWSLETTER: newsletter_subscription
-- ORDER: cancel_order, change_order, place_order
+- ORDER: cancel_order, change_order, place_order, track_order
 - PAYMENT: check_payment_methods, payment_issue
-- REFUND: check_refund_policy, track_refund
+- REFUND: check_refund_policy, get_refund, track_refund
 - SHIPPING_ADDRESS: change_shipping_address, set_up_shipping_address
+- SUBSCRIPTION: newsletter_subscription
 
 ## Entities
 
